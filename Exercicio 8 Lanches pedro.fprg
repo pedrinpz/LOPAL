@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 03:03:30 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAyOjE0OjUzICI7MjI0Nw=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjMzOzIwMjQtMDItMDY7IjAzOjAzOjMwICI7MTsyMzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pedido" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual das 5 op&#231;&#245;es voc&#234; ir&#225; querer?&quot;" newline="True"/>
+            <output expression="&quot;1-Xegg&quot;" newline="True"/>
+            <output expression="&quot;2-Xbacon&quot;" newline="True"/>
+            <output expression="&quot;3-Xsalada&quot;" newline="True"/>
+            <output expression="&quot;4-Xfrango&quot;" newline="True"/>
+            <output expression="&quot;5-Xtudo&quot;" newline="True"/>
+            <input variable="Pedido"/>
+            <declare name="Valor" type="Real" array="False" size=""/>
+            <if expression="Pedido = 1">
+                <then>
+                    <output expression="&quot;O valor do Xegg &#233; R$12.00&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Pedido = 2">
+                        <then>
+                            <output expression="&quot;O valor do Xbacon &#233; R$13.00&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Pedido = 3">
+                                <then>
+                                    <output expression="&quot;O valor do Xsalada &#233; R$14.00&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Pedido = 4">
+                                        <then>
+                                            <output expression="&quot; O valor do Xfrango &#233; R$15.00&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;O valor do Xtudo &#233; R$18.00&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
