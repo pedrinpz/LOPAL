@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main{
+public static void main(String[] args){
+    Scanner leia = new Scanner (System.in);
+    int p3 = 0;
+    int p2 = 0;
+    int p1 = 0;
+    System.out.print("Nota na primeira prova ?");
+    p1 = leia.nextInt();
+    System.out.print("Segunda? ");
+    p2 = leia.nextInt();
+    System.out.print("Terceira");
+    p3 = leia.nextInt();
+    int somaprova = p1 + p2 + p3;
+    int media = somaprova/3;
+    if (media >= 7 && media <= 10){
+    System.out.println("Sua média foi " +media+ " voce foi aprovado" );
+    }
+    else{
+    System.out.println("Você foi reprovado ");
+    }
+    }
+    
+    }
+
